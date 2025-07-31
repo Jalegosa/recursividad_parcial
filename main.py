@@ -41,7 +41,7 @@ def salir():
 
 
 def menu():
-    print("\n--- MENÚ ---")
+    print("\n  MENÚ DE OPCIONES")
     print("1. MCD")
     print("2. Repetir palabra N veces")
     print("3. Contar una letra en una palabra")
