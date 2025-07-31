@@ -1,40 +1,69 @@
-from itertools import count
+def mcd():
+    a = int(input("Ingrese el primer número: "))
+    b = int(input("Ingrese el segundo número: "))
+     #   a, b = b, a % b
 
-def mcd_numeros(numero1,numero2):
-    if numero1 % 0  and numero2 % 2:
-        return
+
+
+def repetir_palabra():
+    palabra = input("Ingrese una palabra: ")
+    n = int(input("¿Cuántas veces desea repetirla?: "))
+    print((palabra + ' ') * n)
+
+
+
+def contar_letra():
+    palabra = input("Ingrese la cadena: ")
+    letra = input("Ingrese la letra a contar: ")
+    if len(letra) != 1:
+        print("Debe ingresar solo una letra.")
     else:
-        mcd_num = numero1 %
+        cantidad = palabra.count(letra)
+        print(f"La letra '{letra}' aparece {cantidad} veces.")
 
 
-def repetir_palabra(n, palabra):
-    if n == 0:
-       return
-    else:
-        palabra = n + (n+1)
-        print(palabra)
 
-palabra = input("Ingrese una palabra: ").upper()
-n = int(input("¿Cuántas veces desea repetir"))
+def decimal_a_binario():
+    numero = int(input("Ingrese un número decimal: "))
+    binario = bin
+    print(f"El número binario es: {binario}")
 
-repetir_palabra(n)
-
-def contar_letra(letra):
-    if n ==  1:
-    else:
-        print (f"La letra {letra}  aparece  {n} veces")
-
-palabra_contar = input("Ingrese la cadena: ")
-ingrese_letra = input("Ingrese la letra que desee contar de la cadena: ")
-print(contar_letra(letra))
 
 def contador_digitos():
-    if numero == 0:
-        return
+    numero = int(input("Ingrese un número: "))
+    total = len(str(abs(numero)))
+    print(f"El número tiene {total} dígitos.")
+
+
+
+def salir():
+    print("Programa finalizado.")
+
+
+def menu():
+    print("\n--- MENÚ ---")
+    print("1. MCD")
+    print("2. Repetir palabra N veces")
+    print("3. Contar una letra en una palabra")
+    print("4. Convertir decimal a binario")
+    print("5. Contar los dígitos de un número")
+    print("6. Salir")
+
+    opcion = input("Seleccione una opción: ")
+
+    if opcion == "1":
+       mcd()
+    elif opcion == "2":
+        repetir_palabra()
+    elif opcion == "3":
+        contar_letra()
+    elif opcion == "4":
+        decimal_a_binario()
+    elif opcion == "5":
+        contador_digitos()
+    elif opcion == "6":
+        salir()
     else:
-        contar_numero = count.numero
-        print(f"el total de digitos es: {contar_numero}")
-
-numero = int(input("Ingrese un numero: "))
-contador_digitos()
-
+        print("Opción inválida.")
+        menu()
+menu()
