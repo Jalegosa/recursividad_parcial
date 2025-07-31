@@ -1,13 +1,20 @@
 from itertools import count
 
+def mcd_numeros(numero1,numero2):
+    if numero1 % 0  and numero2 % 2:
+        return
+    else:
+        mcd_num = numero1 %
+
+
 def repetir_palabra(n, palabra):
     if n == 0:
        return
     else:
-        palabra =
+        palabra = n + (n+1)
         print(palabra)
 
-palabra = input("Ingrese una palabra: ")
+palabra = input("Ingrese una palabra: ").upper()
 n = int(input("¿Cuántas veces desea repetir"))
 
 repetir_palabra(n)
